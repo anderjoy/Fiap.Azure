@@ -25,8 +25,8 @@ namespace ExemploTextAnalytics
                     new
                     {
                         id = 1,
-                        text = opiniao,
-                        language = "pt-PT"
+                        text = opiniao
+                        //language = "en"
                     }
                 }
             };
@@ -34,7 +34,10 @@ namespace ExemploTextAnalytics
             var json = JsonConvert.SerializeObject(doc);
 
             //endpoint
-            var endpoint = "https://brazilsouth.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment";
+            //var endpoint = "https://brazilsouth.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment";
+            //var endpoint = "https://brazilsouth.api.cognitive.microsoft.com/text/analytics/v2.0/keyPhrases";
+            //var endpoint = "https://brazilsouth.api.cognitive.microsoft.com/text/analytics/v2.0/entities";
+            var endpoint = "https://brazilsouth.api.cognitive.microsoft.com/text/analytics/v2.0/languages";
 
             //primary key
             var key = "514ae7b737e24f87a42d472a136e5760";
